@@ -9,6 +9,9 @@
   margin-right: auto;
   background-color: rgba(0, 0, 0, 0.1);
 }
+.book-add-container {
+  padding-left: 20px;
+}
 .book-add {
   margin-top: 50px;
 }
@@ -18,9 +21,7 @@
 .book-add form {
   margin-top: 20px;
 }
-/* .book-add form label {
-  margin-top: 10px;
-} */
+
 .book-add form input {
   height: 25px;
   margin-bottom: 10px;
@@ -33,6 +34,42 @@
 .book-add .btn-container {
   margin-top: 20px;
 }
+.book-add .btn-container button[type="reset"] {
+  background-color: rgba(255, 79, 79, 0.488);
+  color: #ffffff;
+}
 .book-add .btn-container button {
   padding: 17px 40px 17px 40px;
+}
+
+/* styles for book card */
+.book-container h2 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+.book-container .card-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 10px;
+  padding-bottom: 25px;
+}
+.book-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 450px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  place-self: center;
+}
+.book-card p:nth-child(3) {
+  margin-top: 10px;
+}
+.book-card p {
+  margin-bottom: 10px;
+}
+.book-card button {
+  padding: 15px 25px 15px 25px;
+  color: #ffffff;
+  background-color: rgba(255, 79, 79, 0.488);
 }
