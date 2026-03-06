@@ -4,10 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Library App</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>SIMPLE LIBRARY APP</h1>
+    <div class="main-container">
+      <h1>SIMPLE LIBRARY APP</h1>
+      <div class="book-add">
+        <h2>add book</h2>
+        <form action="#">
+          <label for="author">Author</label><br />
+          <input type="text" id="author" name="author" /><br />
+          <label for="title">Title</label><br />
+          <input type="text" id="title" name="title" /> <br />
+          <label for="pages">Pages</label><br />
+          <input type="text" id="pages" name="pages" /> <br />
+          <label for="hasBeenRead">Is Read?</label> <br />
+          <select name="hasBeenRead" id="hasBeenRead">
+            <br />
+            <option value="read">Read</option>
+            <option value="notRead">Not Read</option>
+          </select>
+          <br />
+          <div class="btn-container">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./javascript.js"></script>
   </body>
 </html>
