@@ -4,10 +4,11 @@
   font-family: "Montserrat", sans-serif;
 }
 .main-container {
-  width: 1500px;
+  background-color: rgba(0, 0, 0, 0.1);
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 25px;
+  width: 1500px;
 }
 .book-add-container {
   padding-left: 20px;
@@ -47,6 +48,9 @@
   margin-top: 50px;
   margin-bottom: 25px;
   padding-left: 20px;
+}
+.book-empty {
+  font-weight: 500;
 }
 .book-container .card-container {
   display: grid;

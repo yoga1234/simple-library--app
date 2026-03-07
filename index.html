@@ -19,13 +19,33 @@
         <h1>SIMPLE LIBRARY APP</h1>
         <div class="book-add">
           <h2>add book</h2>
-          <form action="#">
+          <form id="inputBook" action="#">
             <label for="author">Author</label><br />
-            <input type="text" id="author" name="author" maxlength="15" /><br />
+            <input
+              type="text"
+              id="author"
+              name="author"
+              maxlength="15"
+              autocomplete="off"
+            /><br />
             <label for="title">Title</label><br />
-            <input type="text" id="title" name="title" maxlength="15" /> <br />
+            <input
+              type="text"
+              id="title"
+              name="title"
+              maxlength="15"
+              autocomplete="off"
+            />
+            <br />
             <label for="pages">Pages</label><br />
-            <input type="text" id="pages" name="pages" maxlength="4" /> <br />
+            <input
+              type="number"
+              id="pages"
+              name="pages"
+              maxlength="4"
+              autocomplete="off"
+            />
+            <br />
             <label for="hasBeenRead">Is Read?</label> <br />
             <select name="hasBeenRead" id="hasBeenRead">
               <br />
@@ -34,7 +54,7 @@
             </select>
             <br />
             <div class="btn-container">
-              <button type="submit">Submit</button>
+              <button id="submit-button" type="submit">Submit</button>
               <button type="reset">Reset</button>
             </div>
           </form>
@@ -42,52 +62,7 @@
       </div>
       <div class="book-container">
         <h2>Book Collection</h2>
-        <div class="card-container">
-          <div class="book-card">
-            <h3>Book title</h3>
-            <hr />
-            <p>Author: Katayama saki</p>
-            <p>Pages: 100</p>
-            <p>Is Read</p>
-            <button>Delete</button>
-          </div>
-
-          <div class="book-card">
-            <h3>Book title</h3>
-            <hr />
-            <p>Author: Katayama saki</p>
-            <p>Pages: 100</p>
-            <p>Is Read</p>
-            <button>Delete</button>
-          </div>
-
-          <div class="book-card">
-            <h3>Book title</h3>
-            <hr />
-            <p>Author: Katayama saki</p>
-            <p>Pages: 100</p>
-            <p>Is Read</p>
-            <button>Delete</button>
-          </div>
-
-          <div class="book-card">
-            <h3>Book title</h3>
-            <hr />
-            <p>Author: Katayama saki</p>
-            <p>Pages: 100</p>
-            <p>Is Read</p>
-            <button>Delete</button>
-          </div>
-
-          <div class="book-card">
-            <h3>Book title</h3>
-            <hr />
-            <p>Author: Katayama saki</p>
-            <p>Pages: 100</p>
-            <p>Is Read</p>
-            <button>Delete</button>
-          </div>
-        </div>
+        <div id="cardContainer" class="card-container"></div>
       </div>
     </div>
     <!-- end of main container-->
